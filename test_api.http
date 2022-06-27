@@ -1,0 +1,46 @@
+POST http://localhost:10001/movies/
+Content-Type: application/json
+
+{
+  "title": "New_name_2",
+  "description": "New_description",
+  "trailer": "New_trailer",
+  "year": 1986,
+  "rating": 6,
+  "genre_id": 1,
+  "director_id": 1
+}
+###
+GET http://localhost:10001/directors/
+Content-Type: application/json
+
+
+###
+DELETE http://localhost:10001/movies/21
+Content-Type: application/json
+
+###
+
+PUT http://localhost:10001/movies/21
+Content-Type: application/json
+
+{
+  "title": "Update_name",
+  "description": "New_description",
+  "trailer": "New_trailer",
+  "year": 1986,
+  "rating": 6,
+  "genre_id": 1,
+  "director_id": 1
+}
+
+###
+
+POST http://localhost:10001/reviews/
+Content-Type: application/json
+
+{
+  "user": "Thomas",
+  "rating": 15,
+  "book_id": 133
+}
